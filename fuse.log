@@ -1,0 +1,43 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /csehome/gunhee2001/Final/Main_isim_beh.exe -prj /csehome/gunhee2001/Final/Main_beh.prj work.Main work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/csehome/gunhee2001/Final/full_adder.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/multibit_adder.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/SignExtend.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/Registers.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/PC.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/mux22.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/mux.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/FreqDivider.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/DataMemory.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/Control.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/BCDTo7Seg.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/ALU.v" into library work
+Analyzing Verilog file "/csehome/gunhee2001/Final/Main.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 83040 KB
+Fuse CPU Usage: 810 ms
+Compiling module FreqDivider
+Compiling module Control
+Compiling module mux22
+Compiling module SignExtend
+Compiling module Registers
+Compiling module mux
+Compiling module full_adder
+Compiling module multibit_adder
+Compiling module ALU
+Compiling module DataMemory
+Compiling module PC
+Compiling module BCDTo7Seg
+Compiling module Main
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 14 Verilog Units
+Built simulation executable /csehome/gunhee2001/Final/Main_isim_beh.exe
+Fuse Memory Usage: 1167476 KB
+Fuse CPU Usage: 850 ms
+GCC CPU Usage: 710 ms

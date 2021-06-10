@@ -1,0 +1,12 @@
+MO Control NULL Control.v vlg41/_control.bin 1623320454
+MO Registers NULL Registers.v vlg20/_registers.bin 1623320454
+MO FreqDivider NULL FreqDivider.v vlg5D/_freq_divider.bin 1623320454
+MO PC NULL PC.v vlg53/_p_c.bin 1623320454
+MO DataMemory NULL DataMemory.v vlg2B/_data_memory.bin 1623320454
+MO SignExtend NULL SignExtend.v vlg4D/_sign_extend.bin 1623320454
+MO full_adder NULL full_adder.v vlg5A/full__adder.bin 1623320454
+MO Main NULL Main.v vlg0D/_main.bin 1623320454
+MO mux NULL mux.v vlg66/mux.bin 1623320454
+MO multibit_adder NULL multibit_adder.v vlg1D/multibit__adder.bin 1623320454
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1623320454
+MO BCDTo7Seg NULL BCDTo7Seg.v vlg66/_b_c_d_to7_seg.bin 1623320454
