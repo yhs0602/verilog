@@ -40,23 +40,31 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock clk50 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ledclk      |    8.552(R)|clk50_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
 Clock to Setup on destination clock clk50
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50          |    5.466|         |         |         |
+clk50          |    5.058|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-reset          |led            |    8.090|
+reset          |led            |    7.367|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Jun 15 17:06:23 2021 
+Analysis completed Tue Jun 15 17:45:54 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
