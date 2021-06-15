@@ -1,0 +1,40 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 15 19:25:24 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_one<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "seg_one<1>" LOCATE = SITE "P12" LEVEL 1;
+COMP "seg_one<2>" LOCATE = SITE "P13" LEVEL 1;
+COMP "seg_one<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "seg_one<4>" LOCATE = SITE "P16" LEVEL 1;
+COMP "seg_one<5>" LOCATE = SITE "P18" LEVEL 1;
+COMP "seg_one<6>" LOCATE = SITE "P19" LEVEL 1;
+COMP "seg_ten<0>" LOCATE = SITE "P3" LEVEL 1;
+COMP "seg_ten<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "seg_ten<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "seg_ten<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "seg_ten<4>" LOCATE = SITE "P7" LEVEL 1;
+COMP "seg_ten<5>" LOCATE = SITE "P8" LEVEL 1;
+COMP "seg_ten<6>" LOCATE = SITE "P10" LEVEL 1;
+COMP "led" LOCATE = SITE "P87" LEVEL 1;
+COMP "ReadAddress<0>" LOCATE = SITE "P96" LEVEL 1;
+COMP "ReadAddress<1>" LOCATE = SITE "P98" LEVEL 1;
+COMP "ReadAddress<2>" LOCATE = SITE "P99" LEVEL 1;
+COMP "ReadAddress<3>" LOCATE = SITE "P101" LEVEL 1;
+COMP "ReadAddress<4>" LOCATE = SITE "P102" LEVEL 1;
+COMP "ReadAddress<5>" LOCATE = SITE "P103" LEVEL 1;
+COMP "ReadAddress<6>" LOCATE = SITE "P104" LEVEL 1;
+COMP "ReadAddress<7>" LOCATE = SITE "P105" LEVEL 1;
+COMP "clk50" LOCATE = SITE "P57" LEVEL 1;
+COMP "reset" LOCATE = SITE "P47" LEVEL 1;
+COMP "ledclk" LOCATE = SITE "P88" LEVEL 1;
+COMP "instruction<0>" LOCATE = SITE "P120" LEVEL 1;
+COMP "instruction<1>" LOCATE = SITE "P121" LEVEL 1;
+COMP "instruction<2>" LOCATE = SITE "P124" LEVEL 1;
+COMP "instruction<3>" LOCATE = SITE "P125" LEVEL 1;
+COMP "instruction<4>" LOCATE = SITE "P126" LEVEL 1;
+COMP "instruction<5>" LOCATE = SITE "P127" LEVEL 1;
+COMP "instruction<6>" LOCATE = SITE "P129" LEVEL 1;
+SCHEMATIC END;
+
