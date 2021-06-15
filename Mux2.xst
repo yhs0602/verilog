@@ -1,5 +1,0 @@
-set -tmpdir "D:/verilog_project/Final_home/xst/projnav.tmp"
-set -xsthdpdir "D:/verilog_project/Final_home/xst"
-elaborate
--ifn Mux2.prj
--ifmt mixed

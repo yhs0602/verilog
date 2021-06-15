@@ -1,0 +1,188 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc3s50an,tqg144,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk50 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ledclk      |    7.835(R)|clk50_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50          |    5.494|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+instruction<0> |seg_one<0>     |   16.930|
+instruction<0> |seg_one<1>     |   16.653|
+instruction<0> |seg_one<2>     |   16.596|
+instruction<0> |seg_one<3>     |   16.419|
+instruction<0> |seg_one<4>     |   16.486|
+instruction<0> |seg_one<5>     |   16.641|
+instruction<0> |seg_one<6>     |   16.313|
+instruction<0> |seg_ten<0>     |   16.950|
+instruction<0> |seg_ten<1>     |   17.184|
+instruction<0> |seg_ten<2>     |   16.444|
+instruction<0> |seg_ten<3>     |   17.205|
+instruction<0> |seg_ten<4>     |   16.777|
+instruction<0> |seg_ten<5>     |   16.898|
+instruction<0> |seg_ten<6>     |   16.645|
+instruction<1> |seg_one<0>     |   16.332|
+instruction<1> |seg_one<1>     |   16.103|
+instruction<1> |seg_one<2>     |   15.998|
+instruction<1> |seg_one<3>     |   15.832|
+instruction<1> |seg_one<4>     |   15.965|
+instruction<1> |seg_one<5>     |   16.043|
+instruction<1> |seg_one<6>     |   15.715|
+instruction<1> |seg_ten<0>     |   16.471|
+instruction<1> |seg_ten<1>     |   16.705|
+instruction<1> |seg_ten<2>     |   15.954|
+instruction<1> |seg_ten<3>     |   16.726|
+instruction<1> |seg_ten<4>     |   16.213|
+instruction<1> |seg_ten<5>     |   16.419|
+instruction<1> |seg_ten<6>     |   16.166|
+instruction<2> |seg_one<0>     |   18.271|
+instruction<2> |seg_one<1>     |   18.042|
+instruction<2> |seg_one<2>     |   17.937|
+instruction<2> |seg_one<3>     |   17.771|
+instruction<2> |seg_one<4>     |   17.904|
+instruction<2> |seg_one<5>     |   17.982|
+instruction<2> |seg_one<6>     |   17.654|
+instruction<2> |seg_ten<0>     |   18.380|
+instruction<2> |seg_ten<1>     |   18.614|
+instruction<2> |seg_ten<2>     |   17.863|
+instruction<2> |seg_ten<3>     |   18.635|
+instruction<2> |seg_ten<4>     |   18.122|
+instruction<2> |seg_ten<5>     |   18.328|
+instruction<2> |seg_ten<6>     |   18.075|
+instruction<3> |seg_one<0>     |   18.238|
+instruction<3> |seg_one<1>     |   18.009|
+instruction<3> |seg_one<2>     |   17.904|
+instruction<3> |seg_one<3>     |   17.738|
+instruction<3> |seg_one<4>     |   17.871|
+instruction<3> |seg_one<5>     |   17.949|
+instruction<3> |seg_one<6>     |   17.621|
+instruction<3> |seg_ten<0>     |   17.971|
+instruction<3> |seg_ten<1>     |   18.205|
+instruction<3> |seg_ten<2>     |   17.681|
+instruction<3> |seg_ten<3>     |   18.226|
+instruction<3> |seg_ten<4>     |   17.713|
+instruction<3> |seg_ten<5>     |   17.919|
+instruction<3> |seg_ten<6>     |   17.666|
+instruction<4> |seg_one<0>     |   18.148|
+instruction<4> |seg_one<1>     |   17.871|
+instruction<4> |seg_one<2>     |   17.814|
+instruction<4> |seg_one<3>     |   17.637|
+instruction<4> |seg_one<4>     |   17.704|
+instruction<4> |seg_one<5>     |   17.859|
+instruction<4> |seg_one<6>     |   17.531|
+instruction<4> |seg_ten<0>     |   18.168|
+instruction<4> |seg_ten<1>     |   18.402|
+instruction<4> |seg_ten<2>     |   17.651|
+instruction<4> |seg_ten<3>     |   18.423|
+instruction<4> |seg_ten<4>     |   17.995|
+instruction<4> |seg_ten<5>     |   18.116|
+instruction<4> |seg_ten<6>     |   17.863|
+instruction<5> |seg_one<0>     |   16.947|
+instruction<5> |seg_one<1>     |   16.670|
+instruction<5> |seg_one<2>     |   16.613|
+instruction<5> |seg_one<3>     |   16.436|
+instruction<5> |seg_one<4>     |   16.503|
+instruction<5> |seg_one<5>     |   16.658|
+instruction<5> |seg_one<6>     |   16.330|
+instruction<5> |seg_ten<0>     |   16.967|
+instruction<5> |seg_ten<1>     |   17.201|
+instruction<5> |seg_ten<2>     |   16.450|
+instruction<5> |seg_ten<3>     |   17.222|
+instruction<5> |seg_ten<4>     |   16.794|
+instruction<5> |seg_ten<5>     |   16.915|
+instruction<5> |seg_ten<6>     |   16.662|
+instruction<6> |seg_one<0>     |   16.986|
+instruction<6> |seg_one<1>     |   16.709|
+instruction<6> |seg_one<2>     |   16.652|
+instruction<6> |seg_one<3>     |   16.475|
+instruction<6> |seg_one<4>     |   16.138|
+instruction<6> |seg_one<5>     |   16.697|
+instruction<6> |seg_one<6>     |   16.369|
+instruction<6> |seg_ten<0>     |   17.001|
+instruction<6> |seg_ten<1>     |   17.235|
+instruction<6> |seg_ten<2>     |   16.403|
+instruction<6> |seg_ten<3>     |   17.245|
+instruction<6> |seg_ten<4>     |   16.833|
+instruction<6> |seg_ten<5>     |   16.938|
+instruction<6> |seg_ten<6>     |   16.498|
+instruction<7> |seg_one<0>     |   17.453|
+instruction<7> |seg_one<1>     |   17.176|
+instruction<7> |seg_one<2>     |   17.119|
+instruction<7> |seg_one<3>     |   16.942|
+instruction<7> |seg_one<4>     |   17.009|
+instruction<7> |seg_one<5>     |   17.164|
+instruction<7> |seg_one<6>     |   16.836|
+instruction<7> |seg_ten<0>     |   17.473|
+instruction<7> |seg_ten<1>     |   17.707|
+instruction<7> |seg_ten<2>     |   16.956|
+instruction<7> |seg_ten<3>     |   17.728|
+instruction<7> |seg_ten<4>     |   17.300|
+instruction<7> |seg_ten<5>     |   17.421|
+instruction<7> |seg_ten<6>     |   17.168|
+reset          |led            |    7.338|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jun 15 19:25:35 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 353 MB
+
+
+

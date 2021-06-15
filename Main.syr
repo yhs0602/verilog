@@ -406,7 +406,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 32
+# IOs                              : 34
 
 Cell Usage :
 # BELS                             : 537
@@ -428,17 +428,17 @@ Cell Usage :
 #      VCC                         : 1
 #      XORCY                       : 32
 # FlipFlops/Latches                : 329
-#      FD                          : 8
-#      FDCE                        : 132
-#      FDE                         : 33
+#      FDC                         : 8
+#      FDCE                        : 164
+#      FDE                         : 1
 #      FDPE                        : 124
 #      FDR                         : 32
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 31
+# IO Buffers                       : 33
 #      IBUF                        : 9
-#      OBUF                        : 22
+#      OBUF                        : 24
 =========================================================================
 
 Device utilization summary:
@@ -449,8 +449,8 @@ Selected Device : 3s50antqg144-4
  Number of Slices:                      296  out of    704    42%  
  Number of Slice Flip Flops:            329  out of   1408    23%  
  Number of 4 input LUTs:                326  out of   1408    23%  
- Number of IOs:                          32
- Number of bonded IOBs:                  32  out of    108    29%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    108    31%  
  Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
@@ -483,7 +483,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-reset                              | IBUF                   | 256   |
+reset                              | IBUF                   | 296   |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -559,15 +559,15 @@ Timing constraint: Default period analysis for Clock 'T0/clkout1'
 -------------------------------------------------------------------------
 Delay:               10.302ns (Levels of Logic = 9)
   Source:            T4/register_0_0 (FF)
-  Destination:       T4/register_0_7 (FF)
+  Destination:       T4/register_3_7 (FF)
   Source Clock:      T0/clkout1 rising
   Destination Clock: T0/clkout1 rising
 
-  Data Path: T4/register_0_0 to T4/register_0_7
+  Data Path: T4/register_0_0 to T4/register_3_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.527  T4/register_0_0 (T4/register_0_0)
+     FDCE:C->Q             2   0.591   0.527  T4/register_0_0 (T4/register_0_0)
      LUT3:I1->O            1   0.643   0.000  T4/mux8_2_f5_F (N135)
      MUXF5:I0->O          34   0.276   1.266  T4/mux8_2_f5 (ReadData2<0>)
      LUT4:I3->O            1   0.648   0.452  T5/out<0>1_1 (T5/out<0>1)
@@ -577,7 +577,7 @@ Delay:               10.302ns (Levels of Logic = 9)
      MUXF7:I0->O           1   0.291   0.000  T7/Mmux__COND_3_4_f7_6 (T7/Mmux__COND_3_4_f77)
      MUXF8:I0->O           1   0.291   0.423  T7/Mmux__COND_3_2_f8_6 (ReadDataMem<7>)
      LUT4:I3->O           11   0.648   0.000  T8/out<7>1 (RegWriteData<7>)
-     FDE:D                     0.252          T4/register_1_7
+     FDCE:D                    0.252          T4/register_2_7
     ----------------------------------------
     Total                     10.302ns (5.707ns logic, 4.595ns route)
                                        (55.4% logic, 44.6% route)
@@ -588,10 +588,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'T0/clkout1'
 -------------------------------------------------------------------------
 Offset:              11.232ns (Levels of Logic = 10)
   Source:            instruction<2> (PAD)
-  Destination:       T4/register_0_7 (FF)
+  Destination:       T4/register_3_7 (FF)
   Destination Clock: T0/clkout1 rising
 
-  Data Path: instruction<2> to T4/register_0_7
+  Data Path: instruction<2> to T4/register_3_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -605,10 +605,29 @@ Offset:              11.232ns (Levels of Logic = 10)
      MUXF7:I0->O           1   0.291   0.000  T7/Mmux__COND_3_4_f7_6 (T7/Mmux__COND_3_4_f77)
      MUXF8:I0->O           1   0.291   0.423  T7/Mmux__COND_3_2_f8_6 (ReadDataMem<7>)
      LUT4:I3->O           11   0.648   0.000  T8/out<7>1 (RegWriteData<7>)
-     FDE:D                     0.252          T4/register_1_7
+     FDCE:D                    0.252          T4/register_2_7
     ----------------------------------------
     Total                     11.232ns (5.970ns logic, 5.262ns route)
                                        (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.642ns (Levels of Logic = 1)
+  Source:            T0/clkout (FF)
+  Destination:       ledclk (PAD)
+  Source Clock:      clk50 rising
+
+  Data Path: T0/clkout to ledclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.531  T0/clkout (T0/clkout1)
+     OBUF:I->O                 4.520          ledclk_OBUF (ledclk)
+    ----------------------------------------
+    Total                      5.642ns (5.111ns logic, 0.531ns route)
+                                       (90.6% logic, 9.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'T0/clkout1'
@@ -623,7 +642,7 @@ Offset:              16.714ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.527  T4/register_0_0 (T4/register_0_0)
+     FDCE:C->Q             2   0.591   0.527  T4/register_0_0 (T4/register_0_0)
      LUT3:I1->O            1   0.643   0.000  T4/mux8_2_f5_F (N135)
      MUXF5:I0->O          34   0.276   1.266  T4/mux8_2_f5 (ReadData2<0>)
      LUT4:I3->O            1   0.648   0.452  T5/out<0>1_1 (T5/out<0>1)
@@ -641,7 +660,7 @@ Offset:              16.714ns (Levels of Logic = 11)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 32683 / 14
+  Total number of paths / destination ports: 32684 / 15
 -------------------------------------------------------------------------
 Delay:               17.644ns (Levels of Logic = 12)
   Source:            instruction<2> (PAD)
@@ -670,13 +689,13 @@ Delay:               17.644ns (Levels of Logic = 12)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.26 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.21 secs
  
 --> 
 
 
-Total memory usage is 522192 kilobytes
+Total memory usage is 522220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)

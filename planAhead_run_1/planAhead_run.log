@@ -13,12 +13,12 @@ start_gui
 source /csehome/kygc/verilog/pa.fromNetlist.tcl
 # create_project -name Final_home -dir "/csehome/kygc/verilog/planAhead_run_1" -part xc3s50antqg144-4
 # set_property design_mode GateLvl [get_property srcset [current_run -impl]]
-# set_property edif_top_file "/csehome/kygc/verilog/testtest.ngc" [ get_property srcset [ current_run ] ]
+# set_property edif_top_file "/csehome/kygc/verilog/Main.ngc" [ get_property srcset [ current_run ] ]
 # add_files -norecurse { {/csehome/kygc/verilog} }
 # set_param project.pinAheadLayout  yes
-# set_property target_constrs_file "testtest.ucf" [current_fileset -constrset]
-Adding file '/csehome/kygc/verilog/testtest.ucf' to fileset 'constrs_1'
-# add_files [list {testtest.ucf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "Main.ucf" [current_fileset -constrset]
+Adding file '/csehome/kygc/verilog/Main.ucf' to fileset 'constrs_1'
+# add_files [list {Main.ucf}] -fileset [get_property constrset [current_run]]
 # link_design
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
@@ -28,21 +28,21 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Release 14.7 - ngc2edif P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Reading design testtest.ngc ...
-WARNING:NetListWriters:298 - No output is written to testtest.xncf, ignored.
+Reading design Main.ngc ...
+WARNING:NetListWriters:298 - No output is written to Main.xncf, ignored.
 Processing design ...
    Preping design's networks ...
    Preping design's macros ...
-WARNING:NetListWriters:306 - Signal bus T1/ReadDataMem<7 : 0> on block testtest
-   is not reconstructed, because there are some missing bus signals.
-WARNING:NetListWriters:306 - Signal bus T1/T6/T1/cin<4 : 1> on block testtest is
-   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ReadDataMem<7 : 0> on block Main is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus T10/cin<3 : 1> on block Main is not
+   reconstructed, because there are some missing bus signals.
   finished :Prep
-Writing EDIF netlist file testtest.edif ...
-ngc2edif: Total memory usage is 93368 kilobytes
+Writing EDIF netlist file Main.edif ...
+ngc2edif: Total memory usage is 93412 kilobytes
 
-Parsing EDIF File [./planAhead_run_1/Final_home.data/cache/testtest_ngc_f3cae526.edif]
-Finished Parsing EDIF File [./planAhead_run_1/Final_home.data/cache/testtest_ngc_f3cae526.edif]
+Parsing EDIF File [./planAhead_run_1/Final_home.data/cache/Main_ngc_f3cae526.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Final_home.data/cache/Main_ngc_f3cae526.edif]
 INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn
 Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn]
 Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/hd_int_macros.edn]
@@ -54,20 +54,12 @@ INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data
 Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3a/drc.xml
 INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
 INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
-Parsing UCF File [/csehome/kygc/verilog/testtest.ucf]
-Finished Parsing UCF File [/csehome/kygc/verilog/testtest.ucf]
+Parsing UCF File [/csehome/kygc/verilog/Main.ucf]
+Finished Parsing UCF File [/csehome/kygc/verilog/Main.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 315e075c
-startgroup
-set_property package_pin P57 [get_ports clk50]
-endgroup
-startgroup
-set_property package_pin P47 [get_ports reset]
-endgroup
-set_property package_pin "" [get_ports [list  {seg_ten[0]}]]
-set_property package_pin "" [get_ports [list  {seg_ten[2]}]]
+Phase 0 | Netlist Checksum: fa877b03
 startgroup
 set_property package_pin P55 [get_ports {seg_ten[0]}]
 endgroup
@@ -110,9 +102,121 @@ endgroup
 startgroup
 set_property package_pin P76 [get_ports {seg_one[6]}]
 endgroup
-set_property iostandard LVCMOS25 [get_ports [list {seg_one[2]}]]
+startgroup
+set_property package_pin P57 [get_ports clk50]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports led]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports ledclk]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports led]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports {seg_ten[0]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {seg_ten[1]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {seg_ten[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {seg_ten[3]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {seg_ten[4]}]
+endgroup
+startgroup
+set_property package_pin P8 [get_ports {seg_ten[5]}]
+endgroup
+startgroup
+set_property package_pin P10 [get_ports {seg_ten[6]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {seg_one[0]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {seg_one[1]}]
+endgroup
+startgroup
+set_property package_pin P13 [get_ports {seg_one[2]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {seg_one[3]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {seg_one[4]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {seg_one[5]}]
+endgroup
+startgroup
+set_property package_pin P19 [get_ports {seg_one[6]}]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports {ReadAddress[0]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {ReadAddress[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {ReadAddress[2]}]]
+startgroup
+set_property package_pin P96 [get_ports {ReadAddress[0]}]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports {ReadAddress[1]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {ReadAddress[2]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {ReadAddress[3]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {ReadAddress[4]}]
+endgroup
+startgroup
+set_property package_pin P103 [get_ports {ReadAddress[5]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {ReadAddress[6]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {ReadAddress[7]}]
+endgroup
+startgroup
+set_property package_pin P120 [get_ports {instruction[0]}]
+endgroup
+startgroup
+set_property package_pin P121 [get_ports {instruction[1]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports {instruction[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {instruction[3]}]]
+startgroup
+set_property package_pin P124 [get_ports {instruction[2]}]
+endgroup
+startgroup
+set_property package_pin P125 [get_ports {instruction[3]}]
+endgroup
+startgroup
+set_property package_pin P126 [get_ports {instruction[4]}]
+endgroup
+startgroup
+set_property package_pin P127 [get_ports {instruction[5]}]
+endgroup
+startgroup
+set_property package_pin P129 [get_ports {instruction[6]}]
+endgroup
 save_constraints
 exit
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Tue Jun 15 16:13:46 2021...
+INFO: [Common 17-206] Exiting PlanAhead at Tue Jun 15 19:24:00 2021...
 INFO: [Common 17-83] Releasing license: PlanAhead

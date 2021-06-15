@@ -1,0 +1,36 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk50" LOC = P57;
+NET "ledclk" LOC = P88;
+NET "reset" LOC = P47;
+NET "led" LOC = P87;
+NET "seg_ten[0]" LOC = P3;
+NET "seg_ten[1]" LOC = P4;
+NET "seg_ten[2]" LOC = P5;
+NET "seg_ten[3]" LOC = P6;
+NET "seg_ten[4]" LOC = P7;
+NET "seg_ten[5]" LOC = P8;
+NET "seg_ten[6]" LOC = P10;
+NET "seg_one[0]" LOC = P11;
+NET "seg_one[1]" LOC = P12;
+NET "seg_one[2]" LOC = P13;
+NET "seg_one[3]" LOC = P15;
+NET "seg_one[4]" LOC = P16;
+NET "seg_one[5]" LOC = P18;
+NET "seg_one[6]" LOC = P19;
+NET "ReadAddress[0]" LOC = P96;
+NET "ReadAddress[1]" LOC = P98;
+NET "ReadAddress[2]" LOC = P99;
+NET "ReadAddress[3]" LOC = P101;
+NET "ReadAddress[4]" LOC = P102;
+NET "ReadAddress[5]" LOC = P103;
+NET "ReadAddress[6]" LOC = P104;
+NET "ReadAddress[7]" LOC = P105;
+NET "instruction[0]" LOC = P120;
+NET "instruction[1]" LOC = P121;
+NET "instruction[2]" LOC = P124;
+NET "instruction[3]" LOC = P125;
+NET "instruction[4]" LOC = P126;
+NET "instruction[5]" LOC = P127;
+NET "instruction[6]" LOC = P129;
