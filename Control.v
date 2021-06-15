@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:30:21 06/10/2021 
+// Create Date:    15:39:12 06/11/2021 
 // Design Name: 
 // Module Name:    Control 
 // Project Name: 
@@ -20,21 +20,57 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Control(
     input [1:0] op,
-    output Branch,
-    output MemtoReg,
-    output MemRead,
-    output MemWrite,
-    output ALUOp,
-    output ALUSrc,
-    output RegWrite,
-	 output RegDst
+    output reg Branch,
+    output reg MemtoReg,
+    output reg MemRead,
+    output reg MemWrite,
+    output reg ALUOp,
+    output reg ALUSrc,
+    output reg RegWrite,
+    output reg RegDst
     );
 	 
-	 assign arr = {RegDst, RegWrite, ALUSrc, Branch, MemRead, MemWrite, MemtoReg, ALUOp};
-	 
-	 assign arr = (op == 2'b00) ? 8'b11000001:
-	              (op == 2'b01) ? 8'b01101010:
-					  (op == 2'b10) ? 8'b00100100:
-					  8'b00010000;
+	 always @* begin
+		if(op == 2'b00) begin
+			RegDst = 1'b1;
+			RegWrite = 1'b1;
+			ALUSrc = 1'b0;
+			Branch = 1'b0;
+			MemRead = 1'b0;
+			MemWrite = 1'b0;
+			MemtoReg = 1'b0;
+			ALUOp = 1'b1;
+		end
+		else if(op == 2'b01) begin
+			RegDst = 1'b0;
+			RegWrite = 1'b1;
+			ALUSrc = 1'b1;
+			Branch = 1'b0;
+			MemRead = 1'b1;
+			MemWrite = 1'b0;
+			MemtoReg = 1'b1;
+			ALUOp = 1'b0;
+		end
+		else if(op == 2'b10) begin
+			RegDst = 1'b1;
+			RegWrite = 1'b0;
+			ALUSrc = 1'b1;
+			Branch = 1'b0;
+			MemRead = 1'b0;
+			MemWrite = 1'b1;
+			MemtoReg = 1'b0;
+			ALUOp = 1'b0;
+		end
+		else begin
+			RegDst = 1'b1;
+			RegWrite = 1'b0;
+			ALUSrc = 1'b0;
+			Branch = 1'b1;
+			MemRead = 1'b0;
+			MemWrite = 1'b0;
+			MemtoReg = 1'b0;
+			ALUOp = 1'b0;
+		end
+	 end
 
 endmodule

@@ -1,0 +1,5 @@
+set -tmpdir "D:/verilog_project/Final_home/xst/projnav.tmp"
+set -xsthdpdir "D:/verilog_project/Final_home/xst"
+elaborate
+-ifn Register.prj
+-ifmt mixed

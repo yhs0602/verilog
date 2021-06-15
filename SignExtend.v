@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:32:17 06/10/2021 
+// Create Date:    15:56:11 06/11/2021 
 // Design Name: 
 // Module Name:    SignExtend 
 // Project Name: 
@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module SignExtend(
-    input [1:0] data,
+    input [1:0] in,
     output [7:0] extended
     );
+	 assign extended = {in[1], in[1], in[1], in[1], in[1], in[1], in[1], in[0]};
 
-	assign extended = {data[1], data[1], data[1], data[1], data[1], data[1], data[1], data[0]};
 
 endmodule

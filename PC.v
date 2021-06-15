@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:06:18 06/10/2021 
+// Create Date:    15:21:23 06/11/2021 
 // Design Name: 
 // Module Name:    PC 
 // Project Name: 
@@ -19,18 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module PC(
-    input[7:0] in,
+	 input[7:0] in,
     input clk,
-    output [7:0] out
+    output reg [7:0] out
     );
-	reg[7:0] pcval;
-	initial begin 
-		 pcval = 0;
-	end
-	
-	always @(posedge clk) begin
-		pcval		= in;
-	end
-	assign out = pcval;
+	 
+	 initial begin
+		out <= 0;
+	 end
+	 always @(posedge clk) begin
+		out <= in;
+	 end
 
 endmodule

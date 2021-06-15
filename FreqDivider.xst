@@ -1,5 +1,5 @@
-set -tmpdir "/csehome/gunhee2001/Final/xst/projnav.tmp"
-set -xsthdpdir "/csehome/gunhee2001/Final/xst"
+set -tmpdir "D:/verilog_project/Final_home/xst/projnav.tmp"
+set -xsthdpdir "D:/verilog_project/Final_home/xst"
 elaborate
 -ifn FreqDivider.prj
 -ifmt mixed

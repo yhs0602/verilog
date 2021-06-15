@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:24:08 06/10/2021 
+// Create Date:    15:53:16 06/11/2021 
 // Design Name: 
-// Module Name:    mux 
+// Module Name:    Mux 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,13 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux(
+module Mux(
     input [7:0] a,
     input [7:0] b,
     input s,
     output [7:0] out
     );
 	 
-	 assign out = (s==1'b0) ? a:b;
+	 assign out = (s==1'b0) ? a : b;
 
 endmodule

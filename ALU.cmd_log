@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/verilog_project/Final_home/ALU.xst" -ofn "D:/verilog_project/Final_home/ALU.syr" 

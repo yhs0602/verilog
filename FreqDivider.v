@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:04:36 06/10/2021 
+// Create Date:    16:31:47 06/11/2021 
 // Design Name: 
 // Module Name:    FreqDivider 
 // Project Name: 
@@ -22,14 +22,17 @@ module FreqDivider(
     input clkin,
     output reg clkout
     );
-
-	reg [31:0] cnt = 0;
+	initial begin
+		clkout = 1'b0;
+	end
+	
+	reg [31:0] cnt=32'd0;
 	always@(posedge clkin) begin
 		if(cnt==32'd25000000) begin
 			cnt<=32'd0;
 			clkout<=~clkout;
 		end else begin
-			cnt <=cnt+1;
+			cnt<=cnt+1;
 		end
 	end
 endmodule

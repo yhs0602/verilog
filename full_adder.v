@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    17:11:40 06/10/2021 
+// Create Date:    15:58:06 06/11/2021 
 // Design Name: 
 // Module Name:    full_adder 
 // Project Name: 
@@ -25,7 +25,6 @@ module full_adder(
     output s,
     output cout
     );
-	 
 	 wire ab;
 	 wire bc;
 	 wire ca;
