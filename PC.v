@@ -25,7 +25,7 @@ module PC(
     );
 	 
 	 initial begin
-		out <= 0;
+		out <= 8'd0;
 	 end
 	 always @(posedge clk) begin
 		out <= in;

@@ -1,25 +1,27 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/verilog_project/Final_home/Main_test_isim_beh.exe -prj D:/verilog_project/Final_home/Main_test_beh.prj work.Main_test work.glbl 
-ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /csehome/kygc/verilog/Main_test_isim_beh.exe -prj /csehome/kygc/verilog/Main_test_beh.prj work.Main_test work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/verilog_project/Final_home/full_adder.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/multibit_adder.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/SignExtend.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Register.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/PC.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Mux2.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Mux.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/FreqDivider.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/DataMemory.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Control.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/BCDto7.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/ALU.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Main.v" into library work
-Analyzing Verilog file "D:/verilog_project/Final_home/Main_test.v" into library work
-Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/full_adder.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/multibit_adder.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/SignExtend.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/Register.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/PC.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/Mux2.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/mux.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/FreqDivider.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/DataMemory.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/Control.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/BCDto7.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/ALU.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/Main.v" into library work
+Analyzing Verilog file "/csehome/kygc/verilog/Main_test.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
+Fuse Memory Usage: 83044 KB
+Fuse CPU Usage: 820 ms
 Compiling module FreqDivider
 Compiling module Control
 Compiling module SignExtend
@@ -36,8 +38,9 @@ Compiling module Main
 Compiling module Main_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 8 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 15 Verilog Units
-Built simulation executable D:/verilog_project/Final_home/Main_test_isim_beh.exe
-Fuse Memory Usage: 29620 KB
-Fuse CPU Usage: 843 ms
+Built simulation executable /csehome/kygc/verilog/Main_test_isim_beh.exe
+Fuse Memory Usage: 1167672 KB
+Fuse CPU Usage: 870 ms
+GCC CPU Usage: 840 ms

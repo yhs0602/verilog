@@ -55,6 +55,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Main.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Main.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Main_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Main_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Main_summary.html"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Main_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Main_test_isim_beh.exe"/>
@@ -102,14 +103,11 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1623399687" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1623399687">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1623406607" xil_pn:in_ck="-1308632492288262721" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1623406607">
+    <transform xil_pn:end_ts="1623732726" xil_pn:in_ck="2800524623538747295" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1623732726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="BCDto7.v"/>
       <outfile xil_pn:name="Control.v"/>
@@ -118,7 +116,6 @@
       <outfile xil_pn:name="FreqDivider.v"/>
       <outfile xil_pn:name="Main.v"/>
       <outfile xil_pn:name="Main_test.v"/>
-      <outfile xil_pn:name="Mux.v"/>
       <outfile xil_pn:name="Mux2.v"/>
       <outfile xil_pn:name="PC.v"/>
       <outfile xil_pn:name="Register.v"/>
@@ -126,12 +123,13 @@
       <outfile xil_pn:name="SignExtend.v"/>
       <outfile xil_pn:name="full_adder.v"/>
       <outfile xil_pn:name="multibit_adder.v"/>
+      <outfile xil_pn:name="mux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1623405323" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9163703929313732411" xil_pn:start_ts="1623405323">
+    <transform xil_pn:end_ts="1623731876" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9163703929313732411" xil_pn:start_ts="1623731876">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1623405323" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8371211422539714595" xil_pn:start_ts="1623405323">
+    <transform xil_pn:end_ts="1623731876" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8371211422539714595" xil_pn:start_ts="1623731876">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -139,11 +137,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1623406607" xil_pn:in_ck="-1308632492288262721" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1623406607">
+    <transform xil_pn:end_ts="1623732692" xil_pn:in_ck="2800524623538747295" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1623732692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
@@ -155,7 +152,6 @@
       <outfile xil_pn:name="FreqDivider.v"/>
       <outfile xil_pn:name="Main.v"/>
       <outfile xil_pn:name="Main_test.v"/>
-      <outfile xil_pn:name="Mux.v"/>
       <outfile xil_pn:name="Mux2.v"/>
       <outfile xil_pn:name="PC.v"/>
       <outfile xil_pn:name="Register.v"/>
@@ -163,12 +159,12 @@
       <outfile xil_pn:name="SignExtend.v"/>
       <outfile xil_pn:name="full_adder.v"/>
       <outfile xil_pn:name="multibit_adder.v"/>
+      <outfile xil_pn:name="mux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1623406611" xil_pn:in_ck="-1308632492288262721" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7162046311448212371" xil_pn:start_ts="1623406607">
+    <transform xil_pn:end_ts="1623732693" xil_pn:in_ck="2800524623538747295" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7162046311448212371" xil_pn:start_ts="1623732692">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -180,10 +176,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1623406611" xil_pn:in_ck="1027818546021081108" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-184682920609719818" xil_pn:start_ts="1623406611">
+    <transform xil_pn:end_ts="1623732693" xil_pn:in_ck="-5962934766462533336" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-184682920609719818" xil_pn:start_ts="1623732693">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -193,6 +188,7 @@
     </transform>
     <transform xil_pn:end_ts="1623393580" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1623393580">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1623399464" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1895503952630183740" xil_pn:start_ts="1623399464">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -223,6 +219,7 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
