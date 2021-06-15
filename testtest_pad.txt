@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Jun 15 17:06:21 2021
+Tue Jun 15 17:45:52 2021
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -107,7 +107,7 @@ Pinout by Pin Number:
 |P85       |           |DIFFSLR   |IO_L04N_1/RHCLK1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P86       |           |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
 |P87       |led        |IOB       |IO_L05P_1/RHCLK2      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|P88       |           |DIFFSLR   |IO_L05N_1/TRDY1/RHCLK3|UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P88       |ledclk     |IOB       |IO_L05N_1/TRDY1/RHCLK3|OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |P89       |           |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |P90       |           |DIFFMLR   |IO_L06P_1/RHCLK4      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P91       |           |DIFFMLR   |IO_L07P_1/IRDY1/RHCLK6|UNUSED   |           |1             |          |         |           |         |         |          |           |                |

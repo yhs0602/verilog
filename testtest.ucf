@@ -20,6 +20,9 @@ NET "seg_one[6]" LOC = P76;
 
 NET "seg_one[2]" IOSTANDARD = LVCMOS25;
 
-# PlanAhead Generated physical constraints 
 
 NET "led" LOC = P87;
+
+# PlanAhead Generated physical constraints 
+
+NET "ledclk" LOC = P88;
