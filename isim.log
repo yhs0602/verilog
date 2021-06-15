@@ -11,4 +11,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 4s
+# run 5s
+Stopped at time : 4690151650 ns : File "/csehome/kygc/verilog/FreqDivider.v" Line 30
+# exit 0

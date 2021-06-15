@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.03 secs
  
 --> 
@@ -322,7 +322,7 @@ Unit <Main> synthesized.
 Synthesizing Unit <testtest>.
     Related source file is "testtest.v".
 WARNING:Xst:646 - Signal <ReadAddress<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <MemByte<31:12>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <MemByte<31:5>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
     Found 32x8-bit ROM for signal <instruction>.
     Summary:
 	inferred   1 ROM(s).
@@ -397,7 +397,6 @@ WARNING:Xst:2677 - Node <T1/T9/out_7> of sequential type is unconnected in block
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block testtest, actual ratio is 42.
-FlipFlop T1/T9/out_0 has been replicated 1 time(s)
 FlipFlop T1/T9/out_2 has been replicated 2 time(s)
 
 Final Macro Processing ...
@@ -406,8 +405,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 329
- Flip-Flops                                            : 329
+# Registers                                            : 328
+ Flip-Flops                                            : 328
 
 =========================================================================
 
@@ -436,28 +435,28 @@ Design Statistics
 # IOs                              : 18
 
 Cell Usage :
-# BELS                             : 544
+# BELS                             : 527
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 31
 #      LUT2                        : 2
-#      LUT3                        : 36
+#      LUT3                        : 30
 #      LUT3_D                      : 5
-#      LUT3_L                      : 4
-#      LUT4                        : 234
-#      LUT4_D                      : 16
+#      LUT3_L                      : 2
+#      LUT4                        : 230
+#      LUT4_D                      : 12
 #      LUT4_L                      : 4
 #      MUXCY                       : 39
-#      MUXF5                       : 82
+#      MUXF5                       : 81
 #      MUXF6                       : 32
 #      MUXF7                       : 16
 #      MUXF8                       : 7
 #      VCC                         : 1
 #      XORCY                       : 32
-# FlipFlops/Latches                : 329
-#      FD                          : 8
-#      FDCE                        : 132
-#      FDE                         : 33
+# FlipFlops/Latches                : 328
+#      FDC                         : 7
+#      FDCE                        : 164
+#      FDE                         : 1
 #      FDPE                        : 124
 #      FDR                         : 32
 # Clock Buffers                    : 2
@@ -473,9 +472,9 @@ Device utilization summary:
 
 Selected Device : 3s50antqg144-4 
 
- Number of Slices:                      304  out of    704    43%  
- Number of Slice Flip Flops:            329  out of   1408    23%  
- Number of 4 input LUTs:                334  out of   1408    23%  
+ Number of Slices:                      296  out of    704    42%  
+ Number of Slice Flip Flops:            328  out of   1408    23%  
+ Number of 4 input LUTs:                318  out of   1408    22%  
  Number of IOs:                          18
  Number of bonded IOBs:                  18  out of    108    16%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -501,7 +500,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-T1/T0/clkout1                      | BUFG                   | 296   |
+T1/T0/clkout1                      | BUFG                   | 295   |
 clk50                              | BUFGP                  | 33    |
 -----------------------------------+------------------------+-------+
 
@@ -510,17 +509,17 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-reset                              | IBUF                   | 256   |
+reset                              | IBUF                   | 295   |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 12.875ns (Maximum Frequency: 77.670MHz)
+   Minimum period: 13.050ns (Maximum Frequency: 76.628MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 19.287ns
-   Maximum combinational path delay: 6.702ns
+   Maximum output required time after clock: 19.462ns
+   Maximum combinational path delay: 6.715ns
 
 Timing Detail:
 --------------
@@ -528,22 +527,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'T1/T0/clkout1'
-  Clock period: 12.875ns (frequency: 77.670MHz)
-  Total number of paths / destination ports: 370857 / 584
+  Clock period: 13.050ns (frequency: 76.628MHz)
+  Total number of paths / destination ports: 349197 / 583
 -------------------------------------------------------------------------
-Delay:               12.875ns (Levels of Logic = 10)
-  Source:            T1/T9/out_1 (FF)
-  Destination:       T1/T4/register_1_0 (FF)
+Delay:               13.050ns (Levels of Logic = 10)
+  Source:            T1/T9/out_0 (FF)
+  Destination:       T1/T4/register_2_0 (FF)
   Source Clock:      T1/T0/clkout1 rising
   Destination Clock: T1/T0/clkout1 rising
 
-  Data Path: T1/T9/out_1 to T1/T4/register_1_0
+  Data Path: T1/T9/out_0 to T1/T4/register_2_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              13   0.591   1.015  T1/T9/out_1 (T1/T9/out_1)
-     LUT3_L:I2->LO         1   0.648   0.132  Mrom_instruction31_SW0 (N38)
-     LUT3:I2->O            9   0.648   0.820  Mrom_instruction31 (Mrom_instruction3)
+     FDC:C->Q             15   0.591   1.049  T1/T9/out_0 (T1/T9/out_0)
+     LUT3_L:I2->LO         1   0.648   0.132  Mrom_instruction31_SW0 (N16)
+     LUT3:I2->O           12   0.648   0.961  Mrom_instruction31 (Mrom_instruction3)
      MUXF5:S->O           34   0.756   1.266  T1/T4/mux8_2_f5 (T1/ReadData2<0>)
      LUT4:I3->O            1   0.648   0.452  T1/T5/out<0>1_1 (T1/T5/out<0>1)
      LUT4:I2->O            5   0.648   0.665  T1/T6/T1/T2/cout1 (T1/T6/T1/cin<1>)
@@ -552,10 +551,10 @@ Delay:               12.875ns (Levels of Logic = 10)
      MUXF7:I0->O           1   0.291   0.000  T1/T7/Mmux__COND_3_4_f7_6 (T1/T7/Mmux__COND_3_4_f77)
      MUXF8:I0->O           1   0.291   0.423  T1/T7/Mmux__COND_3_2_f8_6 (T1/ReadDataMem<7>)
      LUT4:I3->O           11   0.648   0.000  T1/T8/out<7>1 (T1/RegWriteData<7>)
-     FDE:D                     0.252          T1/T4/register_1_7
+     FDCE:D                    0.252          T1/T4/register_2_7
     ----------------------------------------
-    Total                     12.875ns (6.840ns logic, 6.035ns route)
-                                       (53.1% logic, 46.9% route)
+    Total                     13.050ns (6.840ns logic, 6.210ns route)
+                                       (52.4% logic, 47.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50'
@@ -631,20 +630,20 @@ Offset:              5.642ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'T1/T0/clkout1'
-  Total number of paths / destination ports: 204792 / 14
+  Total number of paths / destination ports: 197064 / 14
 -------------------------------------------------------------------------
-Offset:              19.287ns (Levels of Logic = 12)
-  Source:            T1/T9/out_1 (FF)
+Offset:              19.462ns (Levels of Logic = 12)
+  Source:            T1/T9/out_0 (FF)
   Destination:       seg_ten<6> (PAD)
   Source Clock:      T1/T0/clkout1 rising
 
-  Data Path: T1/T9/out_1 to seg_ten<6>
+  Data Path: T1/T9/out_0 to seg_ten<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              13   0.591   1.015  T1/T9/out_1 (T1/T9/out_1)
-     LUT3_L:I2->LO         1   0.648   0.132  Mrom_instruction31_SW0 (N38)
-     LUT3:I2->O            9   0.648   0.820  Mrom_instruction31 (Mrom_instruction3)
+     FDC:C->Q             15   0.591   1.049  T1/T9/out_0 (T1/T9/out_0)
+     LUT3_L:I2->LO         1   0.648   0.132  Mrom_instruction31_SW0 (N16)
+     LUT3:I2->O           12   0.648   0.961  Mrom_instruction31 (Mrom_instruction3)
      MUXF5:S->O           34   0.756   1.266  T1/T4/mux8_2_f5 (T1/ReadData2<0>)
      LUT4:I3->O            1   0.648   0.452  T1/T5/out<0>1_1 (T1/T5/out<0>1)
      LUT4:I2->O            5   0.648   0.665  T1/T6/T1/T2/cout1 (T1/T6/T1/cin<1>)
@@ -656,14 +655,14 @@ Offset:              19.287ns (Levels of Logic = 12)
      LUT4:I0->O            1   0.648   0.420  T1/T13/Mrom_seg41 (seg_ten_4_OBUF)
      OBUF:I->O                 4.520          seg_ten_4_OBUF (seg_ten<4>)
     ----------------------------------------
-    Total                     19.287ns (11.756ns logic, 7.531ns route)
-                                       (61.0% logic, 39.0% route)
+    Total                     19.462ns (11.756ns logic, 7.706ns route)
+                                       (60.4% logic, 39.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               6.702ns (Levels of Logic = 2)
+Delay:               6.715ns (Levels of Logic = 2)
   Source:            reset (PAD)
   Destination:       led (PAD)
 
@@ -671,22 +670,22 @@ Delay:               6.702ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           257   0.849   1.333  reset_IBUF (reset_IBUF)
+     IBUF:I->O           296   0.849   1.346  reset_IBUF (reset_IBUF)
      OBUF:I->O                 4.520          led_OBUF (led)
     ----------------------------------------
-    Total                      6.702ns (5.369ns logic, 1.333ns route)
-                                       (80.1% logic, 19.9% route)
+    Total                      6.715ns (5.369ns logic, 1.346ns route)
+                                       (80.0% logic, 20.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.56 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.45 secs
  
 --> 
 
 
-Total memory usage is 522908 kilobytes
+Total memory usage is 522928 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)

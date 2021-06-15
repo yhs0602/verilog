@@ -60,13 +60,13 @@ module Main(
 	 Control T1(instruction[7:6], Branch, MemtoReg, MemRead, MemWrite, ALUOp, ALUSrc, RegWrite, RegDst);
 	 SignExtend T2(instruction[1:0], extended);
 	 Mux2 T3(instruction[3:2], instruction[1:0], RegDst, WriteReg);
-	 Register T4(instruction[5:4], instruction[3:2], WriteReg, RegWriteData, RegWrite, clk, ReadData1, ReadData2, BCD_ten, BCD_one);
+	 Register T4(instruction[5:4], instruction[3:2], WriteReg, RegWriteData, RegWrite, clk, reset, ReadData1, ReadData2, BCD_ten, BCD_one);
 	 Mux T5(ReadData2, extended, ALUSrc, ALUin);
 	 ALU T6(ReadData1, ALUin, ALUOp, Address);
 	 DataMemory T7(Address, ReadData2, MemRead, MemWrite, reset, clk, ReadDataMem, led);
 	 Mux T8(Address, ReadDataMem, MemtoReg, RegWriteData);
 	 
-	 PC T9(PC_in, clk, PC_out);
+	 PC T9(PC_in, clk, reset, PC_out);
 	 multibit_adder T10(PC_out, 8'd1, nextPC);
 	 multibit_adder T11(nextPC, extended, AddtoMux);
 	 Mux T12(nextPC, AddtoMux, Branch, PC_in);
