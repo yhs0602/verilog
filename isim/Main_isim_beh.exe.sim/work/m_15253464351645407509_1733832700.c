@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "/csehome/kygc/verilog/PC.v";
-static int ng1[] = {0, 0};
+static unsigned int ng1[] = {0U, 0U};
 
 
 
