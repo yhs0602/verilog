@@ -57,7 +57,7 @@ module Main(
 	 Control T1(instruction[7:6], Branch, MemtoReg, MemRead, MemWrite, ALUOp, ALUSrc, RegWrite, RegDst);
 	 SignExtend T2(instruction[1:0], extended);
 	 Mux2 T3(instruction[3:2], instruction[1:0], RegDst, WriteReg);
-	 Register T4(instruction[5:4], instruction[3:2], WriteReg, RegWriteData, RegWrite, ReadData1, ReadData2, BCD_ten, BCD_one);
+	 Register T4(instruction[5:4], instruction[3:2], WriteReg, RegWriteData, RegWrite, clk, ReadData1, ReadData2, BCD_ten, BCD_one);
 	 Mux T5(ReadData2, extended, ALUSrc, ALUin);
 	 ALU T6(ReadData1, ALUin, ALUOp, Address);
 	 DataMemory T7(Address, ReadData2, MemRead, MemWrite, reset, ReadDataMem);
@@ -70,7 +70,5 @@ module Main(
 	 
 	 BCDto7 T13(BCD_ten, seg_ten);
 	 BCDto7 T14(BCD_one, seg_one);
-	 
-
-
+	
 endmodule

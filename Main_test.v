@@ -51,20 +51,15 @@ module Main_test;
 	assign MemByte[2] = {2'b00, 2'b01, 2'b10, 2'b00}; // add $s0, $s1, $s2
 	assign MemByte[3] = {2'b10, 2'b10, 2'b10, 2'b01}; // sw $s2, 1($s2)
 	assign MemByte[4] = {2'b01, 2'b00, 2'b11, 2'b01}; // lw $s3, 1($s0)
-	assign instruction = MemByte[ReadAddress];
+	assign instruction = MemByte[0];
 	initial begin
 		// Initialize Inputs
 		clk50 = 0;
 		reset = 0;
-		
-
-		
 		repeat(500000000) begin
 			#10;
 			clk50= ~clk50;
 		end
-		
-
 	end
       
 endmodule

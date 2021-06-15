@@ -24,8 +24,9 @@ module Register(
     input [1:0] WriteReg,
     input [7:0] WriteData,
 	 input RegWrite,
-    output reg [7:0] ReadData1,
-    output reg [7:0] ReadData2,
+	 input clk,
+    output [7:0] ReadData1,
+    output [7:0] ReadData2,
     output [3:0] BCD_ten,
     output [3:0] BCD_one
     );
@@ -40,12 +41,11 @@ module Register(
 	 
 	 assign BCD_ten = WriteData[7:4];
 	 assign BCD_one = WriteData[3:0];
-	 
-	 always @(RegWrite) begin
+	 assign ReadData1[7:0] = register[ReadReg1];
+	 assign ReadData2[7:0] = register[ReadReg2];
+	 always @(posedge clk) begin
 		if(RegWrite==1'b1) begin
 			register[WriteReg] = WriteData;
-		end
-		ReadData1[7:0] = register[ReadReg1];
-		ReadData2[7:0] = register[ReadReg2];
+		end	
 	 end
 endmodule
