@@ -27,8 +27,5 @@ module ALU(
 	 wire [7:0] add;
 	 multibit_adder T1(a, b, add);
 	 
-	 assign out = (m==1) ? add:
-					8'd0;
-
-
+	 assign out = add;
 endmodule

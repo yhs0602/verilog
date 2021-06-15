@@ -23,7 +23,7 @@
 #endif
 static const char *ng0 = "/csehome/kygc/verilog/FreqDivider.v";
 static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {25000000U, 0U};
+static unsigned int ng2[] = {25000U, 0U};
 static int ng3[] = {1, 0};
 
 

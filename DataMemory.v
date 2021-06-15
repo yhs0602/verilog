@@ -102,7 +102,5 @@ module DataMemory(
 			data[Address] = WriteData;
 		end
 	end
-	assign ReadData = (MemRead==1) ? data[Address] : 8'd0;
-			
-		
+	assign ReadData = data[Address];
 endmodule

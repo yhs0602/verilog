@@ -28,7 +28,7 @@ module FreqDivider(
 	
 	reg [31:0] cnt=32'd0;
 	always@(posedge clkin) begin
-		if(cnt==32'd25000000) begin
+		if(cnt==32'd25000) begin
 			cnt<=32'd0;
 			clkout<=~clkout;
 		end else begin
