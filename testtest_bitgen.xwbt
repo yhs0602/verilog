@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/csehome/kygc/verilog/testtest.ncd
+OUTFILE=/csehome/kygc/verilog/testtest.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-4tqg144
+WORKINGDIR=/csehome/kygc/verilog
+LICENSE=WebPack
+USER_INFO=211016637_0_0_814

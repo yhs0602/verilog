@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:/verilog_project/Final_home/xst/projnav.tmp
+--> 
+Parameter TMPDIR set to /csehome/kygc/verilog/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to D:/verilog_project/Final_home/xst
+--> 
+Parameter xsthdpdir set to /csehome/kygc/verilog/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
@@ -28,7 +31,7 @@ Compiling verilog file "PC.v" in library work
 Module <Register> compiled
 Compiling verilog file "Mux2.v" in library work
 Module <PC> compiled
-Compiling verilog file "Mux.v" in library work
+Compiling verilog file "mux.v" in library work
 Module <Mux2> compiled
 Compiling verilog file "FreqDivider.v" in library work
 Module <Mux> compiled
@@ -48,12 +51,13 @@ Analysis of file <"Main.prj"> succeeded.
  
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 
-Total memory usage is 4467864 kilobytes
+
+Total memory usage is 459892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

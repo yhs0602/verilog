@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Jun 15 16:08:26 2021
+# Process ID: 16165
+# Log file: /csehome/kygc/verilog/planAhead_run_1/planAhead.log
+# Journal file: /csehome/kygc/verilog/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /csehome/kygc/verilog/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P57 [get_ports clk50]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  {seg_ten[0]}]]
+set_property package_pin "" [get_ports [list  {seg_ten[2]}]]
+startgroup
+set_property package_pin P55 [get_ports {seg_ten[0]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {seg_ten[1]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {seg_ten[2]}]
+endgroup
+startgroup
+set_property package_pin P60 [get_ports {seg_ten[3]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {seg_ten[4]}]
+endgroup
+startgroup
+set_property package_pin P63 [get_ports {seg_ten[5]}]
+endgroup
+startgroup
+set_property package_pin P64 [get_ports {seg_ten[6]}]
+endgroup
+startgroup
+set_property package_pin P68 [get_ports {seg_one[0]}]
+endgroup
+startgroup
+set_property package_pin P69 [get_ports {seg_one[1]}]
+endgroup
+startgroup
+set_property package_pin P70 [get_ports {seg_one[2]}]
+endgroup
+startgroup
+set_property package_pin P71 [get_ports {seg_one[3]}]
+endgroup
+startgroup
+set_property package_pin P72 [get_ports {seg_one[4]}]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports {seg_one[5]}]
+endgroup
+startgroup
+set_property package_pin P76 [get_ports {seg_one[6]}]
+endgroup
+set_property iostandard LVCMOS25 [get_ports [list {seg_one[2]}]]
+save_constraints
