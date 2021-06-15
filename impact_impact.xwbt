@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/csehome/kygc/verilog/impact.xsl
+OUTFILE=/csehome/kygc/verilog/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/csehome/kygc/verilog
+LICENSE=iMPACT
+USER_INFO=iMPACT

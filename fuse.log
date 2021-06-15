@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /csehome/kygc/verilog/Main_test_isim_beh.exe -prj /csehome/kygc/verilog/Main_test_beh.prj Main_test work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/kygc/verilog/Main_test_isim_beh.exe" -prj "/csehome/kygc/verilog/Main_test_beh.prj" "Main_test" "work.glbl" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -20,8 +20,8 @@ Analyzing Verilog file "/csehome/kygc/verilog/Main_test.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 83276 KB
-Fuse CPU Usage: 820 ms
+Fuse Memory Usage: 83284 KB
+Fuse CPU Usage: 900 ms
 Compiling module FreqDivider
 Compiling module Control
 Compiling module SignExtend
@@ -41,6 +41,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 15 Verilog Units
 Built simulation executable /csehome/kygc/verilog/Main_test_isim_beh.exe
-Fuse Memory Usage: 1167672 KB
-Fuse CPU Usage: 860 ms
-GCC CPU Usage: 860 ms
+Fuse Memory Usage: 1167664 KB
+Fuse CPU Usage: 910 ms
+GCC CPU Usage: 90 ms

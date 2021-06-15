@@ -25,9 +25,11 @@ module DataMemory(
     input MemWrite,
 	 input reset,
 	 input clk,
-    output [7:0] ReadData
+    output [7:0] ReadData,
+	 output led
     );
 	 
+	 assign led = reset;
 	 reg [7:0] data [31:0];
 	 initial begin
 		data[0] = 8'd0;
@@ -64,7 +66,7 @@ module DataMemory(
 		data[31] = 8'b11110001;
 	end
 	
-	always @(reset, posedge clk) begin
+	always @(posedge reset or posedge clk) begin
 		if(reset==1) begin
 			data[0] = 8'd0;
 			data[1] = 8'd1;

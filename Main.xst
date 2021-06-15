@@ -1,5 +1,5 @@
-set -tmpdir "D:/verilog_project/Final_home/xst/projnav.tmp"
-set -xsthdpdir "D:/verilog_project/Final_home/xst"
+set -tmpdir "/csehome/kygc/verilog/xst/projnav.tmp"
+set -xsthdpdir "/csehome/kygc/verilog/xst"
 elaborate
 -ifn Main.prj
 -ifmt mixed
