@@ -23,7 +23,8 @@ module testtest(
     input reset,
     output [6:0] seg_ten,
     output [6:0] seg_one,
-	 output led
+	 output led,
+	 output ledclk
     );
 	wire [7:0] MemByte[31:0];
 	wire [7:0] instruction;
@@ -34,8 +35,15 @@ module testtest(
 	assign MemByte[2] = {2'b00, 2'b01, 2'b10, 2'b00}; // add $s0, $s1, $s2
 	assign MemByte[3] = {2'b10, 2'b10, 2'b10, 2'b01}; // sw $s2, 1($s2)
 	assign MemByte[4] = {2'b01, 2'b00, 2'b11, 2'b01}; // lw $s3, 1($s0)	assign MemByte[4] = {2'b01, 2'b00, 2'b11, 2'b01}; // lw $s3, 1($s0)
-	assign MemByte[5] = {2'b11, 2'b00, 2'b00, 2'b11}; // j - 1
-
+	// assign MemByte[5] = {2'b11, 2'b00, 2'b00, 2'b11}; // j - 1
+	
+	assign MemByte[5] = {2'b11, 2'b00, 2'b00, 2'b00}; // NOP
+	assign MemByte[6] = {2'b01, 2'b00, 2'b00, 2'b01}; // lw s0, 1(s0)
+	assign MemByte[7] = {2'b00, 2'b00, 2'b00,2'b00}; // add s0, s0, s0
+	assign MemByte[8] = {2'b00, 2'b00, 2'b00,2'b00}; // add s0, s0, s0
+	assign MemByte[9] = {2'b00, 2'b00, 2'b00,2'b00}; // add s0, s0, s0
+	assign MemByte[10] = {2'b00, 2'b00, 2'b00,2'b00}; // add s0, s0, s0
+	assign MemByte[11] = {2'b11, 2'b00, 2'b00, 2'b10}; // j - 2
 	assign instruction = MemByte[ReadAddress];
-	Main T1(clk50,instruction,reset, ReadAddress,seg_ten,seg_one, led);
+	Main T1(clk50,instruction,reset, ReadAddress,seg_ten,seg_one, led, ledclk);
 endmodule

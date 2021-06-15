@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jun 15 17:06:05 2021
+// Written by: Map P.20131013 on Tue Jun 15 17:45:39 2021
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -20,5 +20,6 @@ COMP "seg_ten<6>" LOCATE = SITE "P64" LEVEL 1;
 COMP "led" LOCATE = SITE "P87" LEVEL 1;
 COMP "clk50" LOCATE = SITE "P57" LEVEL 1;
 COMP "reset" LOCATE = SITE "P47" LEVEL 1;
+COMP "ledclk" LOCATE = SITE "P88" LEVEL 1;
 SCHEMATIC END;
 

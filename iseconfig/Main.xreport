@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-06-15T16:33:45</DateModified>
+  <DateModified>2021-06-15T17:42:13</DateModified>
   <ModuleName>testtest</ModuleName>
-  <SummaryTimeStamp>2021-06-15T16:24:05</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-06-15T17:30:01</SummaryTimeStamp>
   <SavedFilePath>/csehome/kygc/verilog/iseconfig/Main.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/csehome/kygc/verilog/</ImplementationReportsDirectory>
   <DateInitialized>2021-06-15T16:33:45</DateInitialized>

@@ -25,7 +25,8 @@ module Main(
     output [7:0] ReadAddress,
 	 output [6:0] seg_ten,
 	 output [6:0] seg_one,
-	 output led
+	 output led,
+	 output ledclk
     );
 	 
 	 wire clk;
@@ -53,6 +54,7 @@ module Main(
 	 wire[7:0] AddtoMux;
 	 
 	 assign ReadAddress = PC_out;
+	 assign ledclk = clk;
 	 
 	 FreqDivider T0(clk50, clk);
 	 Control T1(instruction[7:6], Branch, MemtoReg, MemRead, MemWrite, ALUOp, ALUSrc, RegWrite, RegDst);
