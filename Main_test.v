@@ -26,7 +26,7 @@ module Main_test;
 
 	// Inputs
 	reg clk50;
-	reg [7:0] instruction;
+	wire [7:0] instruction;
 	reg reset;
 
 	// Outputs
@@ -46,17 +46,17 @@ module Main_test;
 
 	wire [7:0] MemByte [31:0];
 	
-	assign MemByte[0] = {2'b01, 2'b00, 2'b10, 2'b01};
-	assign MemByte[1] = {2'b11, 2'b00, 2'b00, 2'b01};
-	assign MemByte[2] = {2'b00, 2'b01, 2'b10, 2'b00};
-	assign MemByte[3] = {2'b10, 2'b10, 2'b10, 2'b01};
-	assign MemByte[4] = {2'b01, 2'b00, 2'b11, 2'b01};
-	
+	assign MemByte[0] = {2'b01, 2'b00, 2'b10, 2'b01}; // lw $s2, 1($s0)
+	assign MemByte[1] = {2'b11, 2'b00, 2'b00, 2'b01}; // j + 1
+	assign MemByte[2] = {2'b00, 2'b01, 2'b10, 2'b00}; // add $s0, $s1, $s2
+	assign MemByte[3] = {2'b10, 2'b10, 2'b10, 2'b01}; // sw $s2, 1($s2)
+	assign MemByte[4] = {2'b01, 2'b00, 2'b11, 2'b01}; // lw $s3, 1($s0)
+	assign instruction = MemByte[ReadAddress];
 	initial begin
 		// Initialize Inputs
 		clk50 = 0;
 		reset = 0;
-		instruction = MemByte[3];
+		
 
 		
 		repeat(500000000) begin
