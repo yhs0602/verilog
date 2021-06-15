@@ -60,7 +60,7 @@ module Main(
 	 Register T4(instruction[5:4], instruction[3:2], WriteReg, RegWriteData, RegWrite, clk, ReadData1, ReadData2, BCD_ten, BCD_one);
 	 Mux T5(ReadData2, extended, ALUSrc, ALUin);
 	 ALU T6(ReadData1, ALUin, ALUOp, Address);
-	 DataMemory T7(Address, ReadData2, MemRead, MemWrite, reset, ReadDataMem);
+	 DataMemory T7(Address, ReadData2, MemRead, MemWrite, reset, clk, ReadDataMem);
 	 Mux T8(Address, ReadDataMem, MemtoReg, RegWriteData);
 	 
 	 PC T9(PC_in, clk, PC_out);

@@ -130,9 +130,9 @@ LAB1:    return;
 }
 
 
-extern void work_m_06340947544307258519_2973510161_init()
+extern void work_m_06340948950715876760_2973510161_init()
 {
 	static char *pe[] = {(void *)Cont_54_0,(void *)implSig1_execute};
-	xsi_register_didat("work_m_06340947544307258519_2973510161", "isim/Main_test_isim_beh.exe.sim/work/m_06340947544307258519_2973510161.didat");
+	xsi_register_didat("work_m_06340948950715876760_2973510161", "isim/Main_isim_beh.exe.sim/work/m_06340948950715876760_2973510161.didat");
 	xsi_register_executes(pe);
 }
