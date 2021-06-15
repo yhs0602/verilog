@@ -23,7 +23,7 @@
 #endif
 static const char *ng0 = "/csehome/kygc/verilog/FreqDivider.v";
 static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {25000U, 0U};
+static unsigned int ng2[] = {25U, 0U};
 static int ng3[] = {1, 0};
 
 
@@ -211,6 +211,6 @@ LAB19:    t18 = *((unsigned int *)t8);
 extern void work_m_09226076520668205295_3744602808_init()
 {
 	static char *pe[] = {(void *)Initial_25_0,(void *)Always_30_1};
-	xsi_register_didat("work_m_09226076520668205295_3744602808", "isim/Main_test_isim_beh.exe.sim/work/m_09226076520668205295_3744602808.didat");
+	xsi_register_didat("work_m_09226076520668205295_3744602808", "isim/FreqDivider_isim_beh.exe.sim/work/m_09226076520668205295_3744602808.didat");
 	xsi_register_executes(pe);
 }
