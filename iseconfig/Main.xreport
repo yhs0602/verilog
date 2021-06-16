@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-06-15T17:42:13</DateModified>
-  <ModuleName>testtest</ModuleName>
+  <DateModified>2021-06-16T20:03:26</DateModified>
+  <ModuleName>Main</ModuleName>
   <SummaryTimeStamp>2021-06-15T17:30:01</SummaryTimeStamp>
-  <SavedFilePath>/csehome/kygc/verilog/iseconfig/Main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/csehome/kygc/verilog/</ImplementationReportsDirectory>
+  <SavedFilePath>D:/verilog_project/verilog-master/verilog-master/iseconfig/Main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/verilog_project/verilog-master/verilog-master\</ImplementationReportsDirectory>
   <DateInitialized>2021-06-15T16:33:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,44 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/verilog_project/verilog-master/verilog-master/Main_test_isim_beh.exe -prj D:/verilog_project/verilog-master/verilog-master/Main_test_beh.prj work.Main_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/full_adder.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/multibit_adder.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/SignExtend.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/Register.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/PC.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/Mux2.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/mux.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/FreqDivider.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/DataMemory.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/Control.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/BCDto7.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/ALU.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/Main.v" into library work
+Analyzing Verilog file "D:/verilog_project/verilog-master/verilog-master/Main_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/verilog_project/verilog-master/verilog-master/Main_test.v" Line 38: Port led is not connected to this instance
+Completed static elaboration
+Compiling module FreqDivider
+Compiling module Control
+Compiling module SignExtend
+Compiling module Mux2
+Compiling module Register
+Compiling module Mux
+Compiling module full_adder
+Compiling module multibit_adder
+Compiling module ALU
+Compiling module DataMemory
+Compiling module PC
+Compiling module BCDto7
+Compiling module Main
+Compiling module Main_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/verilog_project/verilog-master/verilog-master/Main_test_isim_beh.exe
+Fuse Memory Usage: 29152 KB
+Fuse CPU Usage: 812 ms

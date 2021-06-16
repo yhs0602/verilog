@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/csehome/kygc/verilog/Main_test_isim_beh.exe" -prj "/csehome/kygc/verilog/Main_test_beh.prj" "work.Main_test" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/verilog_project/verilog-master/verilog-master/Main_test_isim_beh.exe" -prj "D:/verilog_project/verilog-master/verilog-master/Main_test_beh.prj" "work.Main_test" "work.glbl" 
