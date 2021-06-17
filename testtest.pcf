@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 15 18:45:11 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_one<0>" LOCATE = SITE "P68" LEVEL 1;
+COMP "seg_one<1>" LOCATE = SITE "P69" LEVEL 1;
+COMP "seg_one<2>" LOCATE = SITE "P70" LEVEL 1;
+COMP "seg_one<3>" LOCATE = SITE "P71" LEVEL 1;
+COMP "seg_one<4>" LOCATE = SITE "P72" LEVEL 1;
+COMP "seg_one<5>" LOCATE = SITE "P75" LEVEL 1;
+COMP "seg_one<6>" LOCATE = SITE "P76" LEVEL 1;
+COMP "seg_ten<0>" LOCATE = SITE "P55" LEVEL 1;
+COMP "seg_ten<1>" LOCATE = SITE "P58" LEVEL 1;
+COMP "seg_ten<2>" LOCATE = SITE "P59" LEVEL 1;
+COMP "seg_ten<3>" LOCATE = SITE "P60" LEVEL 1;
+COMP "seg_ten<4>" LOCATE = SITE "P62" LEVEL 1;
+COMP "seg_ten<5>" LOCATE = SITE "P63" LEVEL 1;
+COMP "seg_ten<6>" LOCATE = SITE "P64" LEVEL 1;
+COMP "led" LOCATE = SITE "P87" LEVEL 1;
+COMP "clk50" LOCATE = SITE "P57" LEVEL 1;
+COMP "reset" LOCATE = SITE "P47" LEVEL 1;
+COMP "ledclk" LOCATE = SITE "P88" LEVEL 1;
+SCHEMATIC END;
+
